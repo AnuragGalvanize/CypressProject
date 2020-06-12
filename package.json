@@ -1,0 +1,23 @@
+{
+  "name": "CypressLearning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "node_modules/.bin/cypress open",
+    "cy:run": "node_modules/.bin/cypress run",
+    "cy:chrome": "npm run cy:run -- --browser chrome",
+    "cy:runDashboard": "npm run cy:chrome -- --record --key fab00927-7045-481a-9b5d-5f6f0470fecb",
+    "cy:reporter": "npm run cy:run -- --reporter mochawesome",
+    "cy:info": "cypress info"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.7.0",
+    "mocha": "^7.2.0",
+    "mochawesome": "^6.1.1"
+  }
+}

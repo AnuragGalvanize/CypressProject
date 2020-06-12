@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-06-09T12:39:03.240Z",
+    "end": "2020-06-09T12:39:08.208Z",
+    "duration": 4968,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4c04a982-f14b-41c2-a7f6-bc0a6211cfa8",
+      "title": "",
+      "fullFile": "cypress\\integration\\examples\\test.js",
+      "file": "cypress\\integration\\examples\\test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7ef9255e-2182-4093-8826-02e01ac17490",
+          "title": "visit the link",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "validate Cancel button modal message functionality in Installed tab",
+              "fullTitle": "visit the link validate Cancel button modal message functionality in Installed tab",
+              "timedOut": null,
+              "duration": 3352,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(Cypress.env(\"url\"));\ncy.clickTab(\"Available to install\");\ncy.clickTab(\"installed\");\nthis.data.options.forEach(function (option) {\n  cy.clickButton(option);\n  cy.clickPopupOption(\"Cancel\");\n});",
+              "err": {},
+              "uuid": "8e80901d-db9e-48eb-a49f-caef2b0df462",
+              "parentUUID": "7ef9255e-2182-4093-8826-02e01ac17490",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8e80901d-db9e-48eb-a49f-caef2b0df462"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3352,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {},
+      "version": "5.1.0"
+    }
+  }
+}
